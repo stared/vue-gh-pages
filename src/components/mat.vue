@@ -16,6 +16,7 @@
 import { Dimension, Vector, Cx, Operator } from "quantum-tensors";
 import { KetViewer, MatrixViewer } from "bra-ket-vue";
 import visOnHov from './visOnHov.vue';
+// declare constant
 const colorDim = new Dimension('color', 3, ['R','G','B']) 
 
 function check (letter){

@@ -128,6 +128,7 @@ import { Cx } from "quantum-tensors";
 import { MatrixViewer } from "bra-ket-vue";
 import VueSlider from 'vue-slider-component'
 import 'vue-slider-component/theme/default.css' 
+// declare constant
 const ERROR_TYPE = {
     VALUE: 1,
     INTERVAL: 2,
