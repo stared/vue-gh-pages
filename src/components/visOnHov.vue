@@ -21,45 +21,34 @@
     </svg>
     <br>
     <svg
-      width="200"
+      width="400"
       height="100"
       class="back"
     >
       <path
-        d="m0 50 l200 0"
-        :stroke="startComp"
+        d="m0 50 l 200 0"
+        :stroke="colorBefore"
         stroke-width="10"
       />
-    </svg>
-    <svg
-      width="25"
-      height="100"
-      class="back"
-    >
+      <path
+        d="m200 50 l 200 0"
+        :stroke="colorAfter"
+        stroke-width="10"
+      />
       <rect
-        width="25"
+        :x="200 - 15"
+        width="30"
         height="100"
         rx="5"
         ry="5"
-        fill="black"
+        fill="blue"
         stroke-width="0"
       />
       <text
-        x="2"
+        :x="200 - 15"
         y="54"
         fill="white"
       >Op</text>
-    </svg>
-    <svg
-      width="200"
-      height="100"
-      class="back"
-    >
-      <path
-        d="m0 50 l200 0"
-        :stroke="abc"
-        stroke-width="10"
-      />
     </svg>
   </div>
 </template>
@@ -100,7 +89,7 @@ export default  {
     opacity: 1 
 }
 .back {
-  background-color:#00ccff
+  background-color:#000000
 }
 
 </style>
