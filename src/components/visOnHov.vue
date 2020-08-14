@@ -28,6 +28,18 @@
       <path
         d="m0 50 l 200 0"
         :stroke="colorBefore"
+        stroke-width="20"
+        opacity="0.5"
+      />
+      <path
+        d="m200 50 l 200 0"
+        :stroke="colorAfter"
+        stroke-width="20"
+        opacity="0.5"
+      />
+      <path
+        d="m0 50 l 200 0"
+        :stroke="colorBefore"
         stroke-width="10"
       />
       <path
@@ -57,7 +69,7 @@
 
 
 function giveColor(arr){
-  const a = arr.map((d) => Math.round(d * 255));
+  const a = arr.map((d) => Math.round(2 * d * 255));
   return `rgb(${a.join(',')})`;
 }
 
